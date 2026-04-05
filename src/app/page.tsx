@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Achievements from "@/components/Achievements";
+import Quotations from "@/components/Quotations";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 
@@ -17,7 +18,8 @@ export default function Home() {
       <Experience />
       <Skills />
       <Achievements />
-      <Education />
+      <Quotations />
+      {/* <Education /> */}
       <Contact />
     </main>
   );

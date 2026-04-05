@@ -59,11 +59,11 @@ const Experience = () => {
         <section
             id="experience"
             ref={containerRef}
-            className="py-40 bg-[#010310] relative overflow-hidden font-futuristic"
+            className="py-12 bg-[#010310] relative overflow-hidden font-futuristic"
         >
             <div className="container mx-auto px-6 max-w-6xl relative">
                 {/* Header Section */}
-                <div className="text-center mb-32">
+                <div className="text-center mb-12 md:mb-32">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ const Experience = () => {
 
                 <div className="space-y-32 relative">
                     {/* Start Flag */}
-                    <div className="flex justify-center mb-16">
+                    <div className="hidden md:flex justify-center mb-16">
                         <div className="p-4 rounded-full bg-brand-dark/20 border-2 border-brand/40 text-brand animate-pulse">
                             <span className="text-xs font-black tracking-widest px-4">START</span>
                         </div>
@@ -121,10 +121,10 @@ const Experience = () => {
                                             <h4 className="text-3xl font-bold text-white mb-2 group-hover:text-brand-light transition-colors leading-tight">
                                                 {exp.role}
                                             </h4>
-                                            <div className="text-xs tracking-[0.2em] font-semibold text-white/40 uppercase mb-6">
+                                            <div className="text-xs tracking-[0.2em] font-semibold text-white/80 uppercase mb-6">
                                                 {exp.company}
                                             </div>
-                                            <p className="text-lg font-light text-white/30 leading-relaxed group-hover:text-white/60 transition-colors">
+                                            <p className="text-lg font-light text-white/60 leading-relaxed group-hover:text-white transition-colors">
                                                 {exp.desc}
                                             </p>
                                         </div>
@@ -162,8 +162,8 @@ const Experience = () => {
                                     >
                                         <div className="text-[10px] tracking-[0.3em] font-black text-brand uppercase">{exp.period}</div>
                                         <h4 className="text-2xl font-bold text-white leading-tight">{exp.role}</h4>
-                                        <div className="text-[10px] tracking-[0.2em] font-bold text-white/40 uppercase italic">{exp.company}</div>
-                                        <p className="text-base font-light text-white/40 leading-relaxed">{exp.desc}</p>
+                                        <div className="text-[10px] tracking-[0.2em] font-bold text-white/80 uppercase italic">{exp.company}</div>
+                                        <p className="text-base font-light text-white/60 leading-relaxed">{exp.desc}</p>
                                     </motion.div>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ const Experience = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.5 }}
-                        className="flex justify-center pt-24"
+                        className="hidden md:flex justify-center pt-1 md:pt-24"
                     >
                         <div className="flex flex-col items-center gap-4">
                             <div className="w-1 h-20 bg-gradient-to-b from-brand to-transparent" />
