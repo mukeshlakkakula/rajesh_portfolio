@@ -81,7 +81,7 @@ const Achievements = () => {
         </div>
 
         {/* Infinite Marquee Rows */}
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-6 md:gap-10">
           {/* Row 1: Left to Right */}
           <div className="flex overflow-hidden">
             <div
@@ -104,8 +104,8 @@ const Achievements = () => {
             </div>
           </div>
 
-          {/* Row 2: Right to Left */}
-          <div className="flex overflow-hidden">
+          {/* Row 2: Right to Left - Hidden on Mobile */}
+          <div className="hidden md:flex overflow-hidden">
             <div
               className="flex gap-4 whitespace-nowrap animate-marquee-right hover-pause"
               style={{
@@ -127,9 +127,9 @@ const Achievements = () => {
           </div>
         </div>
 
-        {/* Side Fade Overlays */}
-        <div className="absolute inset-y-0 left-0 w-32 md:w-60 bg-gradient-to-r from-[#010310] to-transparent z-10 pointer-events-none" />
-        <div className="absolute inset-y-0 right-0 w-32 md:w-60 bg-gradient-to-l from-[#010310] to-transparent z-10 pointer-events-none" />
+        {/* Side Fade Overlays - Reduced on Mobile */}
+        <div className="absolute inset-y-0 left-0 w-12 md:w-60 bg-gradient-to-r from-[#010310] to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-12 md:w-60 bg-gradient-to-l from-[#010310] to-transparent z-10 pointer-events-none" />
       </div>
     </section>
   );
@@ -149,7 +149,7 @@ const AchievementCard = ({
       e.stopPropagation();
       onClick();
     }}
-    className={`flex-shrink-0 w-[200px] md:w-[450px] h-[170px] md:h-[300px] rounded-[1rem] overflow-hidden border border-white/5 backdrop-blur-xl transition-all duration-500 group relative cursor-pointer ${isActive ? "border-brand/60 bg-white/[0.12] ring-2 ring-brand/20" : "hover:border-brand/30"}`}
+    className={`flex-shrink-0 w-[300px] md:w-[450px] h-[220px] md:h-[300px] rounded-[1.5rem] overflow-hidden border border-white/5 backdrop-blur-xl transition-all duration-500 group relative cursor-pointer ${isActive ? "border-brand/60 bg-white/[0.12] ring-2 ring-brand/20" : "hover:border-brand/30"}`}
   >
     {/* Background Image */}
     <Image
@@ -172,9 +172,9 @@ const AchievementCard = ({
 
         {/* Description - visible on hover OR if active (clicked) */}
         <div
-          className={`${isActive ? "h-auto opacity-100 mt-2" : "h-0 group-hover:h-auto opacity-0 group-hover:opacity-100"} overflow-hidden transition-all duration-500 ease-in-out`}
+          className={`hidden md:block ${isActive ? "h-auto opacity-100 mt-2" : "h-0 group-hover:h-auto opacity-0 group-hover:opacity-100"} overflow-hidden transition-all duration-500 ease-in-out`}
         >
-          <p className="text-[10px] md:text-base font-medium text-white/80 leading-relaxed whitespace-normal">
+          <p className="text-xs md:text-base font-medium text-white/80 leading-relaxed whitespace-normal">
             {item.desc}
           </p>
         </div>
