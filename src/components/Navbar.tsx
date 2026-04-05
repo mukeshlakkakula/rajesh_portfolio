@@ -56,13 +56,15 @@ const Navbar = () => {
                         </a>
                     ))}
                     <div className="hidden md:block w-[1px] h-4 bg-white/10 mx-2" />
-                    <motion.button
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="hidden md:block px-6 py-3 rounded-[40px] bg-white/5 border border-white/10 text-[11px] tracking-[0.15em] font-medium text-white hover:bg-white/10 transition-all uppercase whitespace-nowrap"
-                    >
-                        BOOK FOR A CALL
-                    </motion.button>
+                    <a href="#contact">
+                        <motion.button
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                            className="hidden md:block px-6 py-3 rounded-[40px] bg-white/5 border border-white/10 text-[11px] tracking-[0.15em] font-medium text-white hover:bg-white/10 transition-all uppercase whitespace-nowrap"
+                        >
+                            BOOK FOR A CALL
+                        </motion.button>
+                    </a>
                 </motion.nav>
             </div>
         </>
