@@ -20,10 +20,10 @@ const Hero = () => {
         <section
             id="home"
             ref={containerRef}
-            className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020205] pt-34 pb-24"
+            className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#010310] pt-34 pb-24"
         >
             {/* Top Spotlight Glow */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[50vh] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[50vh] bg-brand/10 blur-[120px] rounded-full pointer-events-none" />
 
             {/* Main Portrait with Glow */}
             <div className="relative w-full max-w-4xl mx-auto flex flex-col items-center -mt-19 md:-mt-34">
@@ -39,7 +39,7 @@ const Hero = () => {
                         priority
                     />
                     {/* Shadow masking to blend bottom */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-transparent to-transparent opacity-80" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#010310] via-transparent to-transparent opacity-80" />
                 </motion.div>
 
                 {/* Name Overlay matching image style */}

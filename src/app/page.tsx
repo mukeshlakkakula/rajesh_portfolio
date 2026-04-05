@@ -1,11 +1,11 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Skills from '@/components/Skills';
-import Experience from '@/components/Experience';
-import Achievements from '@/components/Achievements';
-import Education from '@/components/Education';
-import Contact from '@/components/Contact';
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Achievements from "@/components/Achievements";
+import Education from "@/components/Education";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -13,8 +13,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Skills />
+
       <Experience />
+      <Skills />
       <Achievements />
       <Education />
       <Contact />
