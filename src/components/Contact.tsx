@@ -58,7 +58,7 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         placeholder="Your Full Name"
-                                        className="w-full bg-white/[0.04] border border-white/5 rounded-2xl md:rounded-3xl px-5 py-4 md:px-8 md:py-6 text-white focus:bg-white/[0.08] focus:border-brand/40 focus:ring-1 focus:ring-brand/10 transition-all outline-none placeholder:text-white/10 text-sm"
+                                        className="w-full bg-white/[0.04] border border-white/5 rounded-2xl md:rounded-3xl px-5 py-4 md:px-8 md:py-6 text-white focus:bg-white/[0.08] focus:border-brand/40 focus:ring-1 focus:ring-brand/10 transition-all outline-none placeholder:text-white/40 text-sm"
                                     />
                                 </div>
                                 <div className="space-y-1 md:space-y-2">
@@ -66,7 +66,7 @@ const Contact = () => {
                                     <input
                                         type="email"
                                         placeholder="your@email.com"
-                                        className="w-full bg-white/[0.04] border border-white/5 rounded-2xl md:rounded-3xl px-5 py-4 md:px-8 md:py-6 text-white focus:bg-white/[0.08] focus:border-brand/40 focus:ring-1 focus:ring-brand/10 transition-all outline-none placeholder:text-white/10 text-sm"
+                                        className="w-full bg-white/[0.04] border border-white/5 rounded-2xl md:rounded-3xl px-5 py-4 md:px-8 md:py-6 text-white focus:bg-white/[0.08] focus:border-brand/40 focus:ring-1 focus:ring-brand/10 transition-all outline-none placeholder:text-white/40 text-sm"
                                     />
                                 </div>
                                 <div className="space-y-1 md:space-y-2">
@@ -74,7 +74,7 @@ const Contact = () => {
                                     <textarea
                                         rows={4}
                                         placeholder="How can I assist you today?"
-                                        className="w-full bg-white/[0.04] border border-white/5 rounded-2xl md:rounded-3xl px-5 py-4 md:px-8 md:py-6 text-white focus:bg-white/[0.08] focus:border-brand/40 focus:ring-1 focus:ring-brand/10 transition-all outline-none resize-none placeholder:text-white/10 text-sm"
+                                        className="w-full bg-white/[0.04] border border-white/5 rounded-2xl md:rounded-3xl px-5 py-4 md:px-8 md:py-6 text-white focus:bg-white/[0.08] focus:border-brand/40 focus:ring-1 focus:ring-brand/10 transition-all outline-none resize-none placeholder:text-white/40 text-sm"
                                     />
                                 </div>
 
@@ -95,9 +95,9 @@ const Contact = () => {
                 </div>
 
                 {/* Final Footer Credits */}
-                <div className="mt-24 mb-24 pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] tracking-[0.3em] font-medium text-white/40 uppercase">
+                <div className="mt-24 mb-24 pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-8 text-[10px] tracking-[0.3em] font-medium text-white/40 uppercase text-center md:text-left">
                     <div>© 2026 RAJESH BATHULA • ESTABLISHED SINCE 2017</div>
-                    <div className="flex gap-12">
+                    <div className="flex justify-center gap-8 md:gap-12 w-full md:w-auto">
                         <a href="https://linkedin.com/in/rajeshbathula" target="_blank" className="hover:text-brand transition-colors">LINKEDIN</a>
                         <a href="#home" className="hover:text-brand transition-colors">BACK TO TOP</a>
                     </div>
